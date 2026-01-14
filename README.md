@@ -1,30 +1,30 @@
-![Integrando seu projeto React com APIs](thumbnail.png)
+![Integrating your React project with APIs](thumbnail.png)
 
 # AluraBooks
 
-O AluraBooks é uma loja virtual que vende livros da Casa do Código. 
-É um MVP que tá só começando e ainda tem muitas funcionalidades novas para serem desenvolvidas.
+AluraBooks is an online store that sells books from Casa do Código.  
+It is an MVP in its early stages, with many new features yet to be developed.
 
 # JSONServer + JWT Auth
 
-Essa é ma API Rest mockada, utilizando json-server e JWT.
+This is a mocked REST API using json-server and JWT.
 
-## 🛠️ Instalação
+## 🛠️ Installation
 
 ```bash
 $ npm install
 $ npm run start-auth
 ```
-## 🛠️ Como se registrar?
 
-Você pode fazer isso efetuando uma requisição post para:
+## 🛠️ How to register?
+
+You can do this by making a POST request to:
 
 ```
 POST http://localhost:8000/public/registrar
 ```
 
-Com os seguintes dados:
-
+With the following data:
 
 ```
 {
@@ -37,18 +37,17 @@ Com os seguintes dados:
 }
 ```
 
-Repare que o e-mail é um campo único e usuários com e-mails duplicados não serão persistidos.
+Note that the email is a unique field and users with duplicate emails will not be saved.
 
-## 🛠️ Como fazer login?
+## 🛠️ How to log in?
 
-Você pode fazer isso efetuando uma requisição post para:
+You can do this by making a POST request to:
 
 ```
 POST http://localhost:8000/public/login
 ```
 
-Com os seguintes dados:
-
+With the following data:
 
 ```
 {
@@ -57,23 +56,23 @@ Com os seguintes dados:
 }
 ```
 
-Você vai receber um token no seguinte formato:
+You will receive a token in the following format:
 
 ```
 {
    "access_token": "<ACCESS_TOKEN>",
-   "user": { ... dados do usuário ... }
+   "user": { ... user data ... }
 }
 ```
 
-## Autenticar próximas requests?
+## Authenticate subsequent requests?
 
-E então, adicionar este mesmo token ao header das próximas requisições:
+Then, add this same token to the header of the next requests:
 
 ```
 Authorization: Bearer <ACCESS_TOKEN>
 ```
 
-## 📚 Mais informações do curso
+## 📚 More course information
 
-O AluraBooks é o projeto utilizado durante toda a formação, e essa API será utilizada em vários cursos diferentes :)
+AluraBooks is the project used throughout the entire training, and this API will be used in various different courses :)
